@@ -1,0 +1,142 @@
+﻿body {
+	text-align: center;
+}
+
+#gameName {
+	color: red;
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+#gameFieldDiv {
+	overflow: auto;
+	background-color: #aaa;
+	margin: 30px auto;
+	box-shadow: 7px 7px 20px black;
+	border: 2px solid #555;
+}
+
+#gameField {
+	border-left: 2px solid #555;
+	border-top: 2px solid #555;
+	float: right;
+}
+
+#button {
+	border: 3px inset black;
+	background-color: #7688A1;
+	/* width: 100px; */
+	/* height: 40px; */
+	color: white;
+	font-size: 1.2em;
+}
+
+#button:hover {
+	border: 3px inset blue;
+	transform: scale(0.9);
+}
+
+#testID, #timer {
+	color: blue;
+	font-size: 1.2em;
+	margin: 5px;
+	display: inline;
+}
+
+
+#result {
+	position: absolute;
+	display: none;
+	background-color: #afa;
+	border: 3px solid black;
+	width: 300px;
+	height: 300px;
+	animation: appearance 1s linear;
+	-webkit-animation: appearance 1s linear;
+	-o-animation: appearance 1s linear;
+	-moz-animation: appearance 1s linear;
+}
+
+#result > p {
+	font-size: 27px;
+	color: white;
+	font-weight: 900;
+	font-family: monospace;
+	text-shadow: 5px 5px 3px black, 10px 10px 5px grey;
+	background-color: rgba(0,0,255,.5);
+}
+
+#result div {
+	float: left;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+#result div p {
+	color: blue;
+	font-size: 22px;
+	font-weight: 900;
+	font-family: monospace;
+}
+
+
+#result div #next {
+	border: none;
+	width: 60px;
+	height: 25px;
+	margin-top: 10px;
+	background: url(next.svg);
+	background-size: 100% 100%;
+}
+
+#result div #refresh {
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: url(refresh.svg);
+	background-size: 100% 100%;
+}
+
+#result div input:hover {
+	transform: scale(1.5);
+}
+
+/* 		Keyframes animations		*/
+
+@keyframes appearance {
+	from {
+		transform: scale(0.1) rotate(1000deg);
+		
+	}
+	to {
+		transform: none;
+	}
+}
+@-webkit-keyframes appearance {
+	from {
+		transform: scale(0.1) rotate(1000deg);
+		
+	}
+	to {
+		transform: none;
+	}
+}
+@-o-keyframes appearance {
+	from {
+		transform: scale(0.1) rotate(1000deg);
+		
+	}
+	to {
+		transform: none;
+	}
+}
+@-moz-keyframes appearance {
+	from {
+		transform: scale(0.1) rotate(1000deg);
+		
+	}
+	to {
+		transform: none;
+	}
+}
